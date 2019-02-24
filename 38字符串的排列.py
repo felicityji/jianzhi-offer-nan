@@ -5,7 +5,7 @@ class Solution:
         if not ss:
             return []
         if len(ss) == 1:
-            return list(ss)
+            return list(ss)#转化为list类型为了后面字符的合并，如'a'+'b' 得到 'ab'
         
         charList = list(ss)
         #排序字符串使其相同的字符排列在一起
