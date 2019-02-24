@@ -8,6 +8,7 @@ class Solution:
             return list(ss)
         
         charList = list(ss)
+        #排序字符串使其相同的字符排列在一起
         charList.sort()
         pStr = []
         for i in range(0,len(charList)):
