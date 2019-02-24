@@ -10,7 +10,7 @@ class Solution:
             return False
         # 如果s为空，而pattern不为空，则需要判断
         elif len(s) == 0 and len(pattern) != 0:
-            # pattern中的第二个字符为*，则pattern后移两位继续比较
+            # pattern中的第二个字符为*，则pattern后移两位继续比较，因为第二个字符为*时，可以让前面的字符出现0次
             if len(pattern) > 1 and pattern[1] == '*':
                 return self.match(s, pattern[2:])
             else:
